@@ -19,12 +19,23 @@ To get visibility into the execution of a program you must be able to execute th
 
 The common ways of looking into the ‘innards’ of an executing program can be categorized as:
 
+* 프로그램 실행의 내부를 보는 보편적 방법을 나누면:
+
 - Using a debugging tool,
 - Printlining - Making a temporary modification to the program, typically adding lines that print information out, and
 - Logging - Creating a permanent window into the programs execution in the form of a log.
 
+* - 디버깅 툴을 사용한다.
+* - 라인별 출력 해보기 - 프로그램을 잠시 수정해, 필요한 정보가 출력되도록 한다.
+* - 로그 남기기 - 프로그램의 실행되는 내부를 볼 수 있는 영구적인 창인 로그를 남기도록 한다. 
+
 Debugging tools are wonderful when they are stable and available, but printlining and logging are even more important. Debugging tools often lag behind language development, so at any point in time they may not be available. In addition, because the debugging tool may subtly change the way the program executes it may not always be practical. Finally, there are some kinds of debugging, such as checking an assertion against a large data structure, that require writing code and changing the execution of the program. It is good to know how to use debugging tools when they are stable, but it is critical to be able to employ the other two methods.
 
+* 디버깅 도구는 굉장히 안정적이고 도움이 되나, printlining 과 로그가 더 중요하긴 하다. 디버깅 도구는 언어 개발보다 대체로 늦게 개발되는 편이기 때문에 특정 순간에 사용하지 못할 수 있다. 추가적으로, 디버깅 도구가 프로그램의 실행을 미묘하게 바꿀 수 있기 때문에 항상 실용적이지는 못 할 수 있다. 마지막으로, 몇 경우의 디버깅에서, 거대한 데이터 구조에 대한 검사를 할 때, 코드를 작성하거나 프로그램 실행에 관해 바꿔야 한다. 이것은 여러분이 디버깅 도구를 어떻게 하면 안정적으로 사용할 수 있을지 알려주는 것이나 이것은 다른 두 방법에 비해 사용하는 데 치명적일 수 있다.
+
 Some beginners fear debugging when it requires modifying code. This is understandable - it is a little like exploratory surgery. But you have to learn to poke at the code and make it jump; you have to learn to experiment on it and understand that nothing that you temporarily do to it will make it worse. If you feel this fear, seek out a mentor - we lose a lot of good programmers at the delicate onset of their learning to this fear.
+
+* 몇몇 주니어 개발자 들은 코드를 코드를 수정해야만 하는 디버깅을 할 때 공포를 느낀다. 이해는 간다. 그것은 작은 실험 수술 같은 것이다. 그러나 당신은 코드를 건드는 법을 배워야 하고 그것이 뛰게 만들어야 한다. 당신은 경험을 통해 배워야 하고 일시적으로 그것을 더 안좋게 만들 수 있다는 것을 이해해야 한다. 만약 당신이 이 공포를 느낀다면, 멘토를 찾아라. 우리는 이 두려움에 떨게하는 작은 학습의 시작에서 좋은 프로그래머들을 잃는다.
+
 
 Next [How to Debug by Splitting the Problem Space](02-How-to-Debug-by-Splitting-the-Problem-Space.md)
